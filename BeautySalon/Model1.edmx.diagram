@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2e402aacd58a4f788bffaf34326ef98c" Name="Diagram1">
+        <EntityTypeShape EntityType="beauty_salonModel.Appointment" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.AppointmentStatus" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.Client" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.Employee" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.Payment" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.PaymentMethod" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.Service" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="beauty_salonModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="beauty_salonModel.FK_Appointment_AppointmentStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="beauty_salonModel.FK_Appointment_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="beauty_salonModel.FK_Appointment_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="beauty_salonModel.FK_Appointment_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="beauty_salonModel.FK_Payment_Appointment" ManuallyRouted="false" />
+        <AssociationConnector Association="beauty_salonModel.FK_Payment_PaymentMethod" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
