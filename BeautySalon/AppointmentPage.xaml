@@ -25,16 +25,16 @@
                 <DataTemplate>
                     <Border Padding="15" MinWidth="300" MinHeight="150" Background="{StaticResource MaterialDesignDarkSeparatorBackground}">
                         <Grid>
-                            <TextBlock HorizontalAlignment="Right" Text="{Binding date, StringFormat='{}{0:dd.MM.yyyy}'}" FontWeight="SemiBold"/>
+                            <TextBlock HorizontalAlignment="Right" Text="{Binding date, StringFormat='{}{0:dd.MM.yyyy HH:mm}'}" FontWeight="SemiBold"/>
                             <StackPanel>
-                                <TextBlock FontWeight="SemiBold" Text="{Binding id, StringFormat='Запись №{0}'}"/>
-                                <TextBlock Text="{Binding Service1.name, StringFormat='Услуга: {0}'}"/>
-                                <TextBlock>
+                                <TextBlock FontSize="18" FontWeight="SemiBold" Text="{Binding id, StringFormat='Запись №{0}'}"/>
+                                <TextBlock FontSize="18" Text="{Binding Service1.name, StringFormat='Услуга: {0}'}"/>
+                                <TextBlock FontSize="18">
                                     <Run Text="Цена:"/>
                                     <Run Text="{Binding Service1.price}" TextDecorations="Underline"/>
                                     <Run Text="₽" />
                                 </TextBlock>
-                                <TextBlock>
+                                <TextBlock FontSize="18" TextWrapping="Wrap">
                                     <TextBlock.Text>
                                         <MultiBinding StringFormat="Мастер: {0} {1} {2}">
                                             <Binding Path="Employee1.lastName"/>
@@ -43,7 +43,7 @@
                                         </MultiBinding>
                                     </TextBlock.Text>
                                 </TextBlock>
-                                <TextBlock>
+                                <TextBlock FontSize="18" TextWrapping="Wrap">
                                     <TextBlock.Text>
                                         <MultiBinding StringFormat="Клиент: {0} {1} {2}">
                                             <Binding Path="Client1.lastName"/>
@@ -52,7 +52,6 @@
                                         </MultiBinding>
                                     </TextBlock.Text>
                                 </TextBlock>
-                                <TextBlock Text="{Binding date, StringFormat='Дата: {0:dd.MM.yyyy HH:mm}'}"/>
                             </StackPanel>
                         </Grid>
                     </Border>
